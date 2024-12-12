@@ -46,7 +46,7 @@ export default function Home() {
          />
          <meta
             property="og:image"
-            content="image.png"
+            content="./image.png"
          />
          <meta
             property="og:description"
@@ -62,7 +62,7 @@ export default function Home() {
          />
          <meta
             name="twitter:image"
-            content="image.png"
+            content="./image.png"
          />
          <meta
             name="twitter:card"
@@ -144,7 +144,7 @@ export default function Home() {
                <h1 className="text-[2.8rem]  mb-[1rem] md:text-5xl lg:text-[4.5rem] font-bold leading-[1] font-Mark  mt-[.5rem] text-right">
                   🚀My Dev <span className="bg-text-gradient bg-clip-text text-transparent animate-gradient-rotate text-right"> Process </span>
                </h1>
-               <p className="font-thin font-Din max-w-[500px] leading-relaxed tracking-wider text-[#000]/50  ml-auto mt-[1rem] text-right uppercase"> These are the tools I rely on to bring your ideas to life. I swear by these—each one is my go-to for building cool stuff!</p>
+               <p className="font-thin font-Din max-w-[500px] leading-relaxed tracking-wider text-[#000]/50  ml-auto mt-[1rem] text-right uppercase"> Yep, I've got a workflow that I stick to when building frontend apps. Here's how I roll:</p>
 
                <div className="grid grid-cols-1 md:grid-cols-2 gap-[1rem] mt-[2rem]">
                   {devSteps.map((step) => (
