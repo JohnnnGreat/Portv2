@@ -174,7 +174,7 @@ export default function Home() {
                <h2 className="text-[2.8rem]  mb-[1rem] lg:text-[4.5rem] font-extrabold font-Mark leading-[1] ">Think I could be the perfect developer for you?</h2>
                <p className="text-[1rem] mt-[1rem] md:max-w-[70%]  text-[#000]/50 font-Circular">My projects say it all—clean code, eye-catching designs, and user-first experiences. If you’re looking for someone to bring your ideas to life, let’s make it happen together.</p>
                <a
-                  href=""
+                  href="/projects"
                   className="font-Din text-[1.2rem] mt-[4rem] inline-block tracking-widest uppercase"
                >
                   Check Out My Works🚀
