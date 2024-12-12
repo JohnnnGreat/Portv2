@@ -1,4 +1,5 @@
 "use client";
+import CircleMarquee from "@/components/CircularMarquee";
 import TechStackDisplay from "@/components/Tech";
 import { devSteps, homeProjects, latestProjects } from "@/constant";
 
@@ -45,7 +46,7 @@ export default function Home() {
          />
          <meta
             property="og:image"
-            content="webp/preview-image.png"
+            content="image.png"
          />
          <meta
             property="og:description"
@@ -61,7 +62,7 @@ export default function Home() {
          />
          <meta
             name="twitter:image"
-            content="webp/preview-image.png"
+            content="image.png"
          />
          <meta
             name="twitter:card"
@@ -72,10 +73,15 @@ export default function Home() {
             content="https://johnossai.com.ng/"
          />
 
-         <section className="min-h-screen  bg-white flex items-center py-[5rem] pt-[5rem] md:py-[10rem] px-[1rem]">
+         <section className="min-h-screen relative bg-white flex items-center py-[5rem] pt-[5rem] md:py-[10rem] px-[1rem]">
             <div className="max-w-[1000px] mx-auto">
+               <img
+                  src="./hand.png"
+                  className="hidden md:block absolute w-[250px!important] left-[-5rem] rotate-[-30deg]"
+                  alt=""
+               />
                <h1 className="font-Circular border inline-block rounded-full py-2 px-5 sm:py-3 sm:px-7 bg-[#fafafa] text-sm sm:text-base">Hey, I am John</h1>
-               <h1 className="text-[3rem]   md:text-5xl lg:text-[5.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] mt-4">
+               <h1 className="relative z-10 text-[3rem]   md:text-5xl lg:text-[5.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] mt-4">
                   Crafting <span className="bg-text-gradient bg-clip-text text-transparent animate-gradient-rotate">websites</span> that work, look, and feel great.
                </h1>
                <a
@@ -90,7 +96,7 @@ export default function Home() {
 
          {/* Project Highlights */}
          <section
-            id="#projects"
+            id="projects"
             className="py-[4rem] px-[1rem]"
          >
             <div className=" max-w-[1100px] mx-auto">
