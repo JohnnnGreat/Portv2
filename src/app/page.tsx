@@ -174,7 +174,7 @@ export default function Home() {
          <section className="py-[5rem] px-[1rem]">
             <div className="max-w-[1000px] mx-auto">
                <h2 className="text-[2.8rem]  mb-[1rem] lg:text-[4.5rem] font-bold font-Mark mt-[4rem] leading-[1] md:max-w-[80%] text-[#000]/40">
-                  Ready to turn your ideas into a stunning reality? <span className="bg-clip-text inline-block text-transparent bg-gradient-to-r from-purple-500 to-pink-500">Let’s build something amazing together.</span>
+                  Ready to turn your ideas into a stunning reality? <span className="bg-text-gradient bg-clip-text text-transparent animate-gradient-rotate">Let’s build something amazing together.</span>
                </h2>
                <a
                   href="mailto:johnossai20@gmail.com"
