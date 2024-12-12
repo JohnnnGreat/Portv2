@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradient-x {
+   0% {
+      background-position: 0% 50%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 50%;
+   }
+}
+@font-face {
+   font-family: "Circular Std Book";
+   src: url("/Circular.woff") format("woff");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "D-DIN Condensed";
+   src: url("/Din.woff") format("woff");
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Mark Pro";
+   src: url("/MarkPro.woff") format("woff");
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+
+.animate-gradient-x {
+   background-size: 200% 200%;
+   animation: gradient-x 3s ease infinite;
+}
+body {
+   color: var(--foreground);
+   background: var(--background);
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+   width: 100% !important;
+}
+
+.blur_h {
+   backdrop-filter: blur(10px);
+}
+
+@keyframes text-spin {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes spin-slow {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+@layer utilities {
+   .animate-spin-slow {
+      animation: spin-slow 3s linear infinite;
+   }
+
+   .animate-text-spin {
+      animation: text-spin 5s linear infinite;
+   }
+}
+
+@keyframes liquid {
+   0% {
+      left: -100%;
+      width: 0;
+   }
+   50% {
+      left: 50%;
+      width: 50%;
+   }
+   100% {
+      left: 100%;
+      width: 100%;
+   }
+}
+
+html {
+   scroll-behavior: smooth;
+}
