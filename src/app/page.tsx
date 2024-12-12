@@ -72,7 +72,7 @@ export default function Home() {
             content="https://johnossai.com.ng/"
          />
          <header className="  fixed top-[2rem] w-full z-10 p-[1rem]">
-            <div className="py-[1rem] px-[2rem] max-w-[900px] mx-auto bg-[#fafafaa2] blur_h border rounded-[40px] flex justify-between">
+            <div className="py-[1rem] px-[2rem] max-w-[1000px] mx-auto bg-[#fafafaa2] blur_h border rounded-[40px] flex justify-between">
                {" "}
                <div className="flex items-center gap-[1rem]">
                   <div className="font-Din leading-[1] border-r pr-[.7rem]">
@@ -91,7 +91,7 @@ export default function Home() {
                </button>
             </div>
          </header>
-         <section className="  bg-white flex items-center py-[5rem] pt-[5rem] md:py-[10rem] px-[1rem]">
+         <section className="min-h-screen  bg-white flex items-center py-[5rem] pt-[5rem] md:py-[10rem] px-[1rem]">
             <div className="max-w-[1000px] mx-auto">
                <h1 className="font-Circular border inline-block rounded-full py-2 px-5 sm:py-3 sm:px-7 bg-[#fafafa] text-sm sm:text-base">Hey, I am John</h1>
                <h1 className="text-[3rem]   md:text-5xl lg:text-[5.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] mt-4">
@@ -241,9 +241,9 @@ export default function Home() {
             onClick={() => setOpenNav(false)}
          ></div>
 
-         <nav className={`fixed top-0 left-0 h-full w-[70%] bg-white shadow-lg z-30 p-[2rem] transform ${openNav ? "translate-x-0" : "-translate-x-full"} transition-transform duration-500 ease-in-out`}>
+         <nav className={`fixed top-0 left-0 h-full w-full md:w-[70%] bg-white shadow-lg z-30 p-[2rem] transform ${openNav ? "translate-x-0" : "-translate-x-full"} transition-transform duration-500 ease-in-out`}>
             <button
-               className="absolute top-[1rem] right-[1rem] text-gray-500"
+               className="absolute top-[1rem] right-[1rem] text-gray-500 font-Din uppercase tracking-widest"
                onClick={() => setOpenNav(false)}
             >
                Close ✖
@@ -283,7 +283,7 @@ export default function Home() {
                </li>
             </ul>
             <h1 className="text-[2.8rem]  mb-[1rem] md:text-5xl lg:text-[4.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] my-[4rem]">Let's build something amazing together!</h1>
-            <div className="overflow-scroll">
+            <div>
                {" "}
                <div className="grid grid-cols-1 md:grid-cols-4 gap-[3rem] mt-[3rem] max-h-full">
                   {latestProjects.map((project) => (

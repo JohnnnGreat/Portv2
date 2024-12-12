@@ -6,8 +6,8 @@ import React from "react";
 const Projects = () => {
    return (
       <>
-         <header className="  fixed top-[2rem] w-full z-10 p-[1rem]">
-            <div className="py-[1rem] px-[2rem] max-w-[1100px] mx-auto bg-[#fafafaa2] blur_h border rounded-[40px] flex justify-between">
+         <header className="  fixed top-[2rem] w-full z-10 p-[1rem] ">
+            <div className="py-[1rem] px-[2rem] max-w-[1100px] mx-auto bg-[#fafafaa2] blur_h border rounded-[40px] flex justify-between gap-[2rem]">
                {" "}
                <Link
                   href="/"
@@ -24,9 +24,9 @@ const Projects = () => {
                </div>
             </div>
          </header>
-         <div className="max-w-[1000px] mx-auto">
+         <div className="max-w-[1000px] mx-auto p-[1rem]">
             {" "}
-            <h1 className="text-[3rem]  md:text-5xl lg:text-[4.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] mt-[9rem]">Check out some of the cool stuff I’ve built</h1>
+            <h1 className="text-[3rem]  md:text-5xl lg:text-[4.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[100%] md:max-w-[70%] lg:max-w-[80%] mt-[9rem]">Check out some of the cool stuff I’ve built</h1>
             <p className="font-thin font-Circular  mx-auto  mb-12 mt-[1rem]">These projects showcase what I can do, and I’m always excited to create more!</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[3rem] mt-[3rem]">
                {projectsInfoDetails.map((project) => (
