@@ -37,12 +37,12 @@ export default function RootLayout({
                   <div className="flex items-center gap-[1rem]">
                      <Link
                         href="/"
-                        className="font-Din leading-[1] border-r pr-[.7rem]"
+                        className="font-Din leading-[1] border-r pr-[.7rem] text-right"
                      >
                         <h1>John</h1>
                         <h1>Ossai</h1>
                      </Link>
-                     <h1 className="font-Circular">Design and Development</h1>
+                     <h1 className="font-Circular text-[.7rem] uppercase tracking-wider">Design and Development</h1>
                   </div>
                   <button
                      className="inline-block font-Din font-normal text-[1.2rem] uppercase tracking-[2]"

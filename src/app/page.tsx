@@ -78,7 +78,7 @@ export default function Home() {
             <div className="max-w-[1000px] mx-auto">
                <img
                   src="./hand.png"
-                  className="hidden md:block absolute w-[250px!important] left-[-5rem] rotate-[-30deg]"
+                  className="hidden md:block absolute w-[250px!important] bottom-[3rem] right-[-3rem] rotate-[-30deg] scale-x-[-1]"
                   alt=""
                />
                <h1 className="font-Circular border inline-block rounded-full py-2 px-5 sm:py-3 sm:px-7 bg-[#fafafa] text-sm sm:text-base">Hey, I am John</h1>
