@@ -53,6 +53,10 @@ export default function Home() {
             content="I am a web developer passionate about turning ideas into real-life products."
          />
          <meta
+            name="og:card"
+            content="summary_large_image"
+         />
+         <meta
             name="twitter:title"
             content="John Ossai 🚀 &mdash; Web Developer"
          />
