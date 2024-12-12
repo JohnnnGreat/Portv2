@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FaFigma, FaReact, FaSass } from "react-icons/fa";
 import { SiTypescript, SiNextdotjs, SiAntdesign, SiRedux, SiShadcnui, SiSupabase, SiExpress } from "react-icons/si";
 import Marquee from "react-fast-marquee";
+import { SiCoreldraw, SiReactrouter, SiAuth0, SiWordpress } from "react-icons/si";
 
 const techIcons = {
    Figma: FaFigma,
@@ -23,9 +24,9 @@ const techIcons = {
 const TechStackDisplay = () => {
    const techStacks = [
       { id: 1, title: "Figma", icon: FaFigma },
-      { id: 2, title: "Corel Draw", icon: SiTypescript },
+      { id: 2, title: "Corel Draw", icon: SiCoreldraw },
       { id: 3, title: "Typescript", icon: SiTypescript },
-      { id: 4, title: "React Router", icon: SiTypescript },
+      { id: 4, title: "React Router", icon: SiReactrouter },
       { id: 5, title: "Next", icon: SiNextdotjs },
       { id: 6, title: "Sass", icon: FaSass },
       { id: 7, title: "Ant Design", icon: SiAntdesign },
@@ -34,12 +35,13 @@ const TechStackDisplay = () => {
       { id: 10, title: "Supabase", icon: SiSupabase },
       { id: 11, title: "Express", icon: SiExpress },
       { id: 12, title: "React", icon: FaReact },
+      { id: 13, title: "Auth0", icon: SiAuth0 },
    ];
    const techStacksTwo = [
       { id: 1, title: "Figma", icon: FaFigma },
-      { id: 2, title: "Corel Draw", icon: SiTypescript },
+      { id: 2, title: "Corel Draw", icon: SiCoreldraw },
       { id: 3, title: "Typescript", icon: SiTypescript },
-      { id: 4, title: "React Router", icon: SiTypescript },
+      { id: 4, title: "React Router", icon: SiReactrouter },
       { id: 5, title: "Next", icon: SiNextdotjs },
       { id: 6, title: "Sass", icon: FaSass },
       { id: 7, title: "Ant Design", icon: SiAntdesign },

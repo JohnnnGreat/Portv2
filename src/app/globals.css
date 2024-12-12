@@ -110,4 +110,27 @@ html {
    will-change: transform;
 }
 
+/* CSS for text gradient */
+.bg-text-gradient {
+   background: linear-gradient(to right, #ec5fff, #feb47b);
+   -webkit-background-clip: text; /* WebKit prefix for mobile Chrome */
+   background-clip: text;
+   color: transparent; /* Make text transparent to show the gradient */
+}
 
+@keyframes gradient-rotation {
+   0% {
+      background-position: 0% 50%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 50%;
+   }
+}
+
+.animate-gradient-rotate {
+   background-size: 200% 200%;
+   animation: gradient-rotation 3s linear infinite;
+}

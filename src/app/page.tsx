@@ -82,7 +82,7 @@ export default function Home() {
                   alt=""
                />
                <h1 className="font-Circular border inline-block rounded-full py-2 px-5 sm:py-3 sm:px-7 bg-[#fafafa] text-sm sm:text-base">Hey, I am John</h1>
-               <h1 className="relative z-10 text-[3rem]   md:text-5xl lg:text-[5.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] mt-4">
+               <h1 className="relative z-10 text-[3rem] md:text-5xl lg:text-[5.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] mt-4">
                   Crafting <span className="bg-text-gradient bg-clip-text text-transparent animate-gradient-rotate">websites</span> that work, look, and feel great.
                </h1>
                <a
