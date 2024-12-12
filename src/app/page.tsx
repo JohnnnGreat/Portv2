@@ -46,16 +46,13 @@ export default function Home() {
          />
          <meta
             property="og:image"
-            content="./image.png"
+            content="https://www.johnossai.com.ng/image.png"
          />
          <meta
             property="og:description"
             content="I am a web developer passionate about turning ideas into real-life products."
          />
-         <meta
-            name="og:card"
-            content="summary_large_image"
-         />
+
          <meta
             name="twitter:title"
             content="John Ossai 🚀 &mdash; Web Developer"
@@ -66,7 +63,7 @@ export default function Home() {
          />
          <meta
             name="twitter:image"
-            content="./image.png"
+            content="https://www.johnossai.com.ng/image.png"
          />
          <meta
             name="twitter:card"
