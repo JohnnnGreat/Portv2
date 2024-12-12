@@ -71,26 +71,7 @@ export default function Home() {
             name="twitter:url"
             content="https://johnossai.com.ng/"
          />
-         <header className="  fixed top-[2rem] w-full z-10 p-[1rem]">
-            <div className="py-[1rem] px-[2rem] max-w-[1000px] mx-auto bg-[#fafafaa2] blur_h border rounded-[40px] flex justify-between">
-               {" "}
-               <div className="flex items-center gap-[1rem]">
-                  <div className="font-Din leading-[1] border-r pr-[.7rem]">
-                     <h1>John</h1>
-                     <h1>Ossai</h1>
-                  </div>
-                  <h1 className="font-Circular">Design and Development</h1>
-               </div>
-               <button
-                  className="inline-block font-Din font-normal text-[1.2rem] uppercase tracking-[2]"
-                  onClick={() => {
-                     setOpenNav(true);
-                  }}
-               >
-                  Menu
-               </button>
-            </div>
-         </header>
+
          <section className="min-h-screen  bg-white flex items-center py-[5rem] pt-[5rem] md:py-[10rem] px-[1rem]">
             <div className="max-w-[1000px] mx-auto">
                <h1 className="font-Circular border inline-block rounded-full py-2 px-5 sm:py-3 sm:px-7 bg-[#fafafa] text-sm sm:text-base">Hey, I am John</h1>
@@ -109,7 +90,7 @@ export default function Home() {
 
          {/* Project Highlights */}
          <section
-            id="projects"
+            id="#projects"
             className="py-[4rem] px-[1rem]"
          >
             <div className=" max-w-[1100px] mx-auto">
@@ -235,71 +216,6 @@ export default function Home() {
                </div>
             </div>
          </footer>
-
-         <div
-            className={`fixed inset-0 bg-black bg-opacity-50 z-20 ${openNav ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"} transition-opacity duration-300`}
-            onClick={() => setOpenNav(false)}
-         ></div>
-
-         <nav className={`fixed top-0 left-0 h-full w-full md:w-[70%] bg-white shadow-lg z-30 p-[2rem] transform ${openNav ? "translate-x-0" : "-translate-x-full"} transition-transform duration-500 ease-in-out`}>
-            <button
-               className="absolute top-[1rem] right-[1rem] text-gray-500 font-Din uppercase tracking-widest"
-               onClick={() => setOpenNav(false)}
-            >
-               Close ✖
-            </button>
-            <ul className=" font-Din md:text-[2rem] mt-[2rem] flex items-center justify-between">
-               <li>
-                  <a
-                     href="#home"
-                     className="hover:text-purple-500"
-                  >
-                     Home
-                  </a>
-               </li>
-               <li>
-                  <a
-                     href="#tech"
-                     className="hover:text-purple-500"
-                  >
-                     Tech Stack
-                  </a>
-               </li>
-               <li>
-                  <a
-                     href="#projects"
-                     className="hover:text-purple-500"
-                  >
-                     Projects
-                  </a>
-               </li>
-               <li>
-                  <a
-                     href="#contact"
-                     className="hover:text-purple-500"
-                  >
-                     Contact
-                  </a>
-               </li>
-            </ul>
-            <h1 className="text-[2.8rem]  mb-[1rem] md:text-5xl lg:text-[4.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] my-[4rem]">Let's build something amazing together!</h1>
-            <div>
-               {" "}
-               <div className="grid grid-cols-1 md:grid-cols-4 gap-[3rem] mt-[3rem] max-h-full">
-                  {latestProjects.map((project) => (
-                     <div>
-                        <h1 className="text-[8rem] font-Mark text-[#5c5c5c0a] absolute top-[-5rem] left-[-3rem] ">{project.no}</h1>
-                        <div>{project.image}</div>
-                        {/* Content */}
-                        <div className=" mt-[1rem]">
-                           <h1 className="font-Mark text-[1rem] md:text-[1rem] mt-[2rem] leading-relaxed line-clamp-1">{project.title}</h1>
-                        </div>
-                     </div>
-                  ))}
-               </div>
-            </div>
-         </nav>
-         {}
       </>
    );
 }

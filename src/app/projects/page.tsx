@@ -6,24 +6,6 @@ import React from "react";
 const Projects = () => {
    return (
       <>
-         <header className="  fixed top-[2rem] w-full z-10 p-[1rem] ">
-            <div className="py-[1rem] px-[2rem] max-w-[1100px] mx-auto bg-[#fafafaa2] blur_h border rounded-[40px] flex justify-between gap-[2rem]">
-               {" "}
-               <Link
-                  href="/"
-                  className="inline-block font-Din font-normal text-[1.2rem] uppercase tracking-[2]"
-               >
-                  Back
-               </Link>
-               <div className="flex items-center gap-[1rem]">
-                  <div className="font-Din leading-[1] border-r pr-[.7rem] text-right">
-                     <h1>John</h1>
-                     <h1>Ossai</h1>
-                  </div>
-                  <h1 className="font-Circular">Design and Development</h1>
-               </div>
-            </div>
-         </header>
          <div className="max-w-[1000px] mx-auto p-[1rem]">
             {" "}
             <h1 className="text-[3rem]  md:text-5xl lg:text-[4.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[100%] md:max-w-[70%] lg:max-w-[80%] mt-[9rem]">Check out some of the cool stuff I’ve built</h1>

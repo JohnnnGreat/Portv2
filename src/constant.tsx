@@ -123,7 +123,7 @@ export const projectsInfoDetails = [
       id: 18,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={AICU}
             alt="aicu"
          />
@@ -140,7 +140,7 @@ export const projectsInfoDetails = [
       id: 19,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={EDUGATE}
             alt="edugate"
          />
@@ -158,7 +158,7 @@ export const projectsInfoDetails = [
       id: 17,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={Diplomatic}
             alt="diplomatic"
          />
@@ -175,7 +175,7 @@ export const projectsInfoDetails = [
       id: 16,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={Temu}
             alt="temu"
          />
@@ -193,7 +193,7 @@ export const projectsInfoDetails = [
       id: 1,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={Jobr}
             alt="midwest"
          />
@@ -211,7 +211,7 @@ export const projectsInfoDetails = [
       id: 15,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={Midwest}
             alt="midwest"
          />
@@ -229,7 +229,7 @@ export const projectsInfoDetails = [
       id: 2,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={Veronicas}
             alt="veronicas"
          />
@@ -247,7 +247,7 @@ export const projectsInfoDetails = [
       id: 3,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={ScholarHub}
             alt="scholarhub"
          />
@@ -265,7 +265,7 @@ export const projectsInfoDetails = [
       id: 4,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={Portfolio}
             alt="portfolio"
          />
@@ -282,7 +282,7 @@ export const projectsInfoDetails = [
       id: 5,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={Macgroup}
             alt="Macgroup Tech"
          />
@@ -299,7 +299,7 @@ export const projectsInfoDetails = [
       id: 6,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={Heritage}
             alt="heritage Hub"
          />
@@ -316,7 +316,7 @@ export const projectsInfoDetails = [
       id: 7,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={FitVibe}
             alt="scholarhub"
          />
@@ -333,7 +333,7 @@ export const projectsInfoDetails = [
       id: 8,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={AppDesign}
             alt="Appdesign"
          />
@@ -350,7 +350,7 @@ export const projectsInfoDetails = [
       id: 9,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={Hom}
             alt="House of Max"
          />
@@ -367,7 +367,7 @@ export const projectsInfoDetails = [
       id: 10,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={FileStorage}
             alt="File Storage"
          />
@@ -384,7 +384,7 @@ export const projectsInfoDetails = [
       id: 11,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={Ed}
             alt="ed circle"
          />
@@ -401,7 +401,7 @@ export const projectsInfoDetails = [
       id: 12,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={Culinary}
             alt="scholarhub"
          />
@@ -418,7 +418,7 @@ export const projectsInfoDetails = [
       id: 13,
       image: (
          <Image
-            className="project-image"
+            className="rounded-[20px] h-[500px!important] object-cover"
             src={Marketing}
             alt="ed circle"
          />
