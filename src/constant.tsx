@@ -17,6 +17,9 @@ import Temu from "../public/projectsImages/temu.png";
 import Diplomatic from "../public/projectsImages/diplo.png";
 import AICU from "../public/projectsImages/AICU.jpeg";
 import EDUGATE from "../public/projectsImages/Edugate.jpg";
+import Coursite from "../public/projectsImages/Coursite.jpeg";
+import FOF from "../public/projectsImages/fof.jpeg";
+import INVG from "../public/projectsImages/INVG.jpeg";
 
 import Image from "next/image";
 
@@ -32,7 +35,8 @@ export const homeProjects = [
          />
       ),
       title: "AICU | American International Christian University",
-      description: "A comprehensive university website designed to showcase AICU's mission of developing servant leaders. The platform highlights the institution's vision, academic programs, and commitment to global service through an intuitive and engaging user interface.",
+      description:
+         "A comprehensive university website designed to showcase AICU's mission of developing servant leaders. The platform highlights the institution's vision, academic programs, and commitment to global service through an intuitive and engaging user interface.",
       technologiesUsed: ["React", "Next", "TailwindCss"],
       designTheme: ["Light"],
       href: "https://www.aicuedu.org/",
@@ -110,7 +114,8 @@ export const latestProjects = [
          />
       ),
       title: "AICU | American International Christian University",
-      description: "A comprehensive university website designed to showcase AICU's mission of developing servant leaders. The platform highlights the institution's vision, academic programs, and commitment to global service through an intuitive and engaging user interface.",
+      description:
+         "A comprehensive university website designed to showcase AICU's mission of developing servant leaders. The platform highlights the institution's vision, academic programs, and commitment to global service through an intuitive and engaging user interface.",
       technologiesUsed: ["React", "Next", "TailwindCss"],
       designTheme: ["Light"],
       href: "https://www.aicuedu.org/",
@@ -119,6 +124,60 @@ export const latestProjects = [
    },
 ];
 export const projectsInfoDetails = [
+   {
+      id: 20,
+      image: (
+         <Image
+            className="rounded-[20px] h-[500px!important] object-cover"
+            src={Coursite}
+            alt="coursite"
+         />
+      ),
+      title: "Coursite",
+      description:
+         "A comprehensive online course builder for instructors and students, to upload courses and earn money",
+      technologiesUsed: ["React", "Next", "TailwindCss"],
+      designTheme: ["Light"],
+      href: "https://coursite-rdld.vercel.app/",
+      reverse: false,
+      sourceCodeHref: "/",
+   },
+   {
+      id: 22,
+      image: (
+         <Image
+            className="rounded-[20px] h-[500px!important] object-cover"
+            src={INVG}
+            alt="INVOICE"
+         />
+      ),
+      title: "InvoiceGen",
+      description:
+         "Create, send, and track invoices instantly. Perfect for freelancers, small businesses, and entrepreneurs.",
+      technologiesUsed: ["React", "Remix", "TailwindCss"],
+      designTheme: ["Light"],
+      href: "https://coursite-rdld.vercel.app/",
+      reverse: false,
+      sourceCodeHref: "/",
+   },
+   {
+      id: 21,
+      image: (
+         <Image
+            className="rounded-[20px] h-[100px!important] object-cover"
+            src={FOF}
+            alt="fof"
+         />
+      ),
+      title: "Friends of Christ",
+      description:
+         "A compassionate web presence for a Nigerian NGO, designed to showcase the organization's mission, programs, and impact. The website serves as a powerful communication tool to engage supporters, share stories, and promote community development",
+      technologiesUsed: ["React", "Next", "TailwindCss"],
+      designTheme: ["Light"],
+      href: "https://www.friendsofchrist.com.ng/",
+      reverse: false,
+      sourceCodeHref: "/",
+   },
    {
       id: 18,
       image: (
@@ -129,7 +188,8 @@ export const projectsInfoDetails = [
          />
       ),
       title: "AICU | American International Christian University",
-      description: "A comprehensive university website designed to showcase AICU's mission of developing servant leaders. The platform highlights the institution's vision, academic programs, and commitment to global service through an intuitive and engaging user interface.",
+      description:
+         "A comprehensive university website designed to showcase AICU's mission of developing servant leaders. The platform highlights the institution's vision, academic programs, and commitment to global service through an intuitive and engaging user interface.",
       technologiesUsed: ["React", "Next", "TailwindCss"],
       designTheme: ["Light"],
       href: "https://www.aicuedu.org/",
@@ -164,7 +224,8 @@ export const projectsInfoDetails = [
          />
       ),
       title: "The Diplomatic Digital World",
-      description: "A dynamic web platform for a coding training center, meticulously designed to showcase educational programs, instructor expertise, and provide an engaging entry point for aspiring tech professionals seeking comprehensive coding education and career development.",
+      description:
+         "A dynamic web platform for a coding training center, meticulously designed to showcase educational programs, instructor expertise, and provide an engaging entry point for aspiring tech professionals seeking comprehensive coding education and career development.",
       technologiesUsed: ["React", "Next", "TailwindCss"],
       designTheme: ["Light"],
       href: "https://www.diplomatsdigitalworld.com.ng/",
@@ -271,7 +332,8 @@ export const projectsInfoDetails = [
          />
       ),
       title: "Tim's Portfolio",
-      description: "A professionally crafted personal portfolio website showcasing Tim's professional journey, skills, and creative projects. Designed to provide a comprehensive and visually appealing representation of his professional capabilities and achievements.",
+      description:
+         "A professionally crafted personal portfolio website showcasing Tim's professional journey, skills, and creative projects. Designed to provide a comprehensive and visually appealing representation of his professional capabilities and achievements.",
       href: "https://timgabrielcodes.vercel.app/",
       reverse: false,
       technologiesUsed: ["Next", "Tailwindcss"],
@@ -288,7 +350,8 @@ export const projectsInfoDetails = [
          />
       ),
       title: "Macgroup Technologies",
-      description: "A comprehensive redesign and development of the Macgroup Technologies website, focusing on creating a modern, intuitive digital presence that effectively communicates the company's technological expertise, services, and innovative solutions.",
+      description:
+         "A comprehensive redesign and development of the Macgroup Technologies website, focusing on creating a modern, intuitive digital presence that effectively communicates the company's technological expertise, services, and innovative solutions.",
       href: "https://www.macgrouptech.com/",
       reverse: false,
       technologiesUsed: ["Nextjs", "Sass", "Nodemailer"],
@@ -305,7 +368,8 @@ export const projectsInfoDetails = [
          />
       ),
       title: "Heritage Hub",
-      description: "A sophisticated cuisine discovery platform that allows users to explore, learn about, and connect with traditional culinary experiences. The website serves as a bridge between food enthusiasts and authentic cultural dining experiences.",
+      description:
+         "A sophisticated cuisine discovery platform that allows users to explore, learn about, and connect with traditional culinary experiences. The website serves as a bridge between food enthusiasts and authentic cultural dining experiences.",
       href: "https://soulfood-sepia.vercel.app/",
       reverse: false,
       technologiesUsed: ["Nextjs", "Sass", "Nodemailer", "MongoDb", "Express Js"],
@@ -322,7 +386,8 @@ export const projectsInfoDetails = [
          />
       ),
       title: "FitVibe Hub",
-      description: "A dynamic landing page for a fitness and wellness website, designed to motivate and inspire individuals on their health journey. The platform provides an engaging introduction to fitness resources, wellness tips, and lifestyle transformations.",
+      description:
+         "A dynamic landing page for a fitness and wellness website, designed to motivate and inspire individuals on their health journey. The platform provides an engaging introduction to fitness resources, wellness tips, and lifestyle transformations.",
       href: "https://fitness-and-wellness.vercel.app/",
       reverse: false,
       technologiesUsed: ["Nextjs", "Tailwindcss", "Nodemailer"],
@@ -339,7 +404,8 @@ export const projectsInfoDetails = [
          />
       ),
       title: "Food Green",
-      description: "A meticulously crafted UI design for a food delivery application, demonstrating innovative user interface principles and creating an intuitive, visually appealing digital experience for modern food ordering platforms.",
+      description:
+         "A meticulously crafted UI design for a food delivery application, demonstrating innovative user interface principles and creating an intuitive, visually appealing digital experience for modern food ordering platforms.",
       href: "/",
       reverse: false,
       technologiesUsed: ["Figma", "CorelDraw"],
@@ -356,7 +422,8 @@ export const projectsInfoDetails = [
          />
       ),
       title: "House of Max",
-      description: "A compassionate web presence for a Nigerian NGO, designed to showcase the organization's mission, programs, and impact. The website serves as a powerful communication tool to engage supporters, share stories, and promote community development initiatives.",
+      description:
+         "A compassionate web presence for a Nigerian NGO, designed to showcase the organization's mission, programs, and impact. The website serves as a powerful communication tool to engage supporters, share stories, and promote community development initiatives.",
       href: "https://www.houseofmax.org/",
       reverse: false,
       technologiesUsed: ["Figma", "CorelDraw"],
@@ -373,7 +440,8 @@ export const projectsInfoDetails = [
          />
       ),
       title: "File Storage",
-      description: "An advanced file storage web application that revolutionizes digital file management, offering secure sharing, intuitive organization, and seamless cloud storage solutions for individuals and teams.",
+      description:
+         "An advanced file storage web application that revolutionizes digital file management, offering secure sharing, intuitive organization, and seamless cloud storage solutions for individuals and teams.",
       href: "https://media-storage-pi.vercel.app/",
       reverse: false,
       technologiesUsed: ["Next", "Shadcnui", "Supabase"],
@@ -390,7 +458,8 @@ export const projectsInfoDetails = [
          />
       ),
       title: "Ed Circle",
-      description: "A comprehensive landing page for an educational resource website, designed to provide easy access to learning materials, educational insights, and inspire continuous knowledge acquisition.",
+      description:
+         "A comprehensive landing page for an educational resource website, designed to provide easy access to learning materials, educational insights, and inspire continuous knowledge acquisition.",
       href: "https://edu-circle.netlify.app/",
       reverse: false,
       technologiesUsed: ["Html", "CSS", "Javascript"],
@@ -407,7 +476,8 @@ export const projectsInfoDetails = [
          />
       ),
       title: "Culinary Finder with API",
-      description: "An innovative culinary exploration platform that leverages API integration to provide users with extensive food and recipe information, enabling culinary discovery and inspiration through a user-friendly interface.",
+      description:
+         "An innovative culinary exploration platform that leverages API integration to provide users with extensive food and recipe information, enabling culinary discovery and inspiration through a user-friendly interface.",
       href: "https://food-finder-ecru.vercel.app/",
       reverse: false,
       technologiesUsed: ["Axios", "TailwindCss"],
@@ -424,7 +494,8 @@ export const projectsInfoDetails = [
          />
       ),
       title: "Marketing Madness",
-      description: "A cutting-edge frontend for an AI-powered marketing agency, showcasing innovative digital marketing solutions and demonstrating the potential of artificial intelligence in transforming marketing strategies.",
+      description:
+         "A cutting-edge frontend for an AI-powered marketing agency, showcasing innovative digital marketing solutions and demonstrating the potential of artificial intelligence in transforming marketing strategies.",
       href: "https://marketing-madnes.vercel.app/",
       reverse: false,
       technologiesUsed: ["Html", "CSS", "Javascript"],
@@ -446,10 +517,12 @@ export const devSteps = [
    },
    {
       title: "Deployment and Delivery 🚀",
-      description: "Now that the site’s good to go, it’s time to deploy! I typically use Vercel for quick and easy deployment—it’s fast and smooth. Once it’s live, I send the website over to the client with the URL, documentation, and any other important info they might need.",
+      description:
+         "Now that the site’s good to go, it’s time to deploy! I typically use Vercel for quick and easy deployment—it’s fast and smooth. Once it’s live, I send the website over to the client with the URL, documentation, and any other important info they might need.",
    },
    {
       title: "Periodic Maintenance & Updates 🔄",
-      description: "After the website is live, I don’t just leave it hanging. I check in every so often to make sure everything’s running smoothly. And when it’s time for content updates (thanks, client requests 😅), I’m always down to make those tweaks and keep things fresh.",
+      description:
+         "After the website is live, I don’t just leave it hanging. I check in every so often to make sure everything’s running smoothly. And when it’s time for content updates (thanks, client requests 😅), I’m always down to make those tweaks and keep things fresh.",
    },
 ];

@@ -16,7 +16,10 @@ export default function RootLayout({
 }>) {
    const [pageHeight, setPageHeight] = useState(0);
    const [openNav, setOpenNav] = useState(false);
-   const resizePageHeight = useCallback((entries) => setPageHeight(entries[0].contentRect.height), []);
+   const resizePageHeight = useCallback(
+      (entries) => setPageHeight(entries[0].contentRect.height),
+      [],
+   );
    const scrollRef = useRef(null);
 
    useLayoutEffect(() => {
@@ -42,7 +45,9 @@ export default function RootLayout({
                         <h1>John</h1>
                         <h1>Ossai</h1>
                      </Link>
-                     <h1 className="font-Circular text-[.7rem] uppercase tracking-wider">Design and Development</h1>
+                     <h1 className="font-Circular text-[.7rem] uppercase tracking-wider">
+                        Design and Development
+                     </h1>
                   </div>
                   <button
                      className="inline-block font-Din font-normal text-[1.2rem] uppercase tracking-[2]"
@@ -65,11 +70,17 @@ export default function RootLayout({
             <div style={{ height: pageHeight }} />
 
             <div
-               className={`fixed inset-0 bg-black bg-opacity-50 z-20 ${openNav ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"} transition-opacity duration-300`}
+               className={`fixed inset-0 bg-black bg-opacity-50 z-20 ${
+                  openNav ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+               } transition-opacity duration-300`}
                onClick={() => setOpenNav(false)}
             ></div>
 
-            <nav className={`fixed top-0 left-0 h-full w-full md:w-[70%] bg-white shadow-lg z-30 p-[2rem] transform ${openNav ? "translate-x-0" : "-translate-x-full"} transition-transform duration-500 ease-in-out`}>
+            <nav
+               className={`fixed top-0 left-0 h-full w-full md:w-[70%] bg-white shadow-lg z-30 p-[2rem] transform ${
+                  openNav ? "translate-x-0" : "-translate-x-full"
+               } transition-transform duration-500 ease-in-out`}
+            >
                <button
                   className="absolute top-[1rem] right-[1rem] text-gray-500 font-Din uppercase tracking-widest"
                   onClick={() => setOpenNav(false)}
@@ -79,7 +90,7 @@ export default function RootLayout({
                <ul className=" font-Din md:text-[2rem] mt-[2rem] flex items-center justify-between">
                   <li>
                      <a
-                        href="#home"
+                        href="/"
                         className="hover:text-purple-500"
                      >
                         Home
@@ -95,7 +106,7 @@ export default function RootLayout({
                   </li>
                   <li>
                      <a
-                        href="#projects"
+                        href="/projects"
                         className="hover:text-purple-500"
                      >
                         Projects
@@ -110,17 +121,23 @@ export default function RootLayout({
                      </a>
                   </li>
                </ul>
-               <h1 className="text-[2.8rem]  mb-[1rem] md:text-5xl lg:text-[4.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] my-[4rem]">Let's build something amazing together!</h1>
+               <h1 className="text-[2.8rem]  mb-[1rem] md:text-5xl lg:text-[4.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] my-[4rem]">
+                  Let's build something amazing together!
+               </h1>
                <div>
                   {" "}
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-[3rem] mt-[3rem] max-h-full">
-                     {latestProjects.map((project) => (
-                        <div>
-                           <h1 className="text-[8rem] font-Mark text-[#5c5c5c0a] absolute top-[-5rem] left-[-3rem] ">{project.no}</h1>
+                     {latestProjects.map((project, idx) => (
+                        <div key={idx}>
+                           <h1 className="text-[8rem] font-Mark text-[#5c5c5c0a] absolute top-[-5rem] left-[-3rem] ">
+                              {project.no}
+                           </h1>
                            <div>{project.image}</div>
                            {/* Content */}
                            <div className=" mt-[1rem]">
-                              <h1 className="font-Mark text-[1rem] md:text-[1rem] mt-[2rem] leading-relaxed line-clamp-1">{project.title}</h1>
+                              <h1 className="font-Mark text-[1rem] md:text-[1rem] mt-[2rem] leading-relaxed line-clamp-1">
+                                 {project.title}
+                              </h1>
                            </div>
                         </div>
                      ))}
