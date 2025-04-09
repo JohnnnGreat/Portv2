@@ -59,16 +59,10 @@ export default function RootLayout({
                   </button>
                </div>
             </header>
-
-            <motion.div
-               ref={scrollRef}
-               style={{ y: spring }}
-               className="scroll-container"
-            >
+            <div>
                {children}
-            </motion.div>
-            <div style={{ height: pageHeight }} />
-
+            </div>
+               
             <div
                className={`fixed inset-0 bg-black bg-opacity-50 z-20 ${
                   openNav ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
