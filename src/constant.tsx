@@ -31,80 +31,90 @@ import Veronicas from "../public/projectsImages/Veronicas.jpg";
 
 export const homeProjects = [
   {
-    id: 18,
-    no: "01",
+    id: 20,
     image: (
       <Image
         className="rounded-[20px] h-[500px!important] object-cover"
-        src={AICU}
-        alt="aicu"
+        src={Raven}
+        alt="The Raven"
       />
     ),
-    title: "AICU | American International Christian University",
+    title: "The Raven Landing Page",
     description:
-      "A comprehensive university website designed to showcase AICU's mission of developing servant leaders. The platform highlights the institution's vision, academic programs, and commitment to global service through an intuitive and engaging user interface.",
+      "The Raven transforms your operations with real-time insights, empowering you to make smarter decisions, boost efficiency, and exceed targets.",
     technologiesUsed: ["React", "Next", "TailwindCss"],
     designTheme: ["Light"],
-    href: "https://www.aicuedu.org/",
+    href: "https://the-ravens.energymrc.ng/",
     reverse: false,
     sourceCodeHref: "/",
   },
   {
-    id: 19,
-    no: "02",
+    id: 20,
     image: (
       <Image
         className="rounded-[20px] h-[500px!important] object-cover"
-        src={EDUGATE}
-        alt="edugate"
+        src={EMRCWebsite}
+        alt="EMRCWebsite"
       />
     ),
-    title: "Edugate",
+    title: "EMRC Website Repranding",
     description:
-      "An experimental university portal prototype exploring innovative digital solutions for educational management. While still in development, the project demonstrates potential features for student and administrative interactions, showcasing the future of digital campus experiences.",
-    technologiesUsed: ["React", "Next", "TailwindCss"],
+      "At EMRC we provide Techno-economic, Regulatory and Financial within all aspects of Energy and Utility Businesses",
+    technologiesUsed: ["React", "Next", "TailwindCss", "Shadcnui", "Nextjs Server Actions"],
     designTheme: ["Light"],
-    href: "https://github.com/JohnnnGreat/Edugate-Portal",
+    href: "https://www.energymrc.ng/",
     reverse: false,
     sourceCodeHref: "/",
   },
   {
-    id: 16,
-    no: "03",
+    id: 20,
     image: (
       <Image
         className="rounded-[20px] h-[500px!important] object-cover"
-        src={Temu}
-        alt="temu"
+        src={Flip}
+        alt="Flip Power"
       />
     ),
-    title: "Temu Immigration",
+    title: "Flip Power Landing Page",
     description:
-      "A comprehensive immigration website providing clear, accessible information about immigration services, processes, and support. The platform aims to simplify complex immigration procedures, offer guidance to potential immigrants, and create a user-friendly navigation experience for those seeking international relocation assistance.",
+      "Flip Power helps businesses and utilities manage energy with precision, scale clean tech fast, and hit net-zero goals—without the guesswork.",
     technologiesUsed: ["React", "Next", "TailwindCss"],
     designTheme: ["Light"],
-    href: "https://temu-omega.vercel.app/",
+    href: "https://flip-power.energymrc.ng/",
     reverse: false,
     sourceCodeHref: "/",
   },
   {
-    id: 15,
-    no: "04",
+    id: 20,
     image: (
       <Image
         className="rounded-[20px] h-[500px!important] object-cover"
-        src={Midwest}
-        alt="midwest"
+        src={EMRCCMS}
+        alt="Emrc CMS"
       />
     ),
-    title: "Midwest Jack and Greens",
+    title: "EMRC CMS",
     description:
-      "A vibrant restaurant website capturing the authentic essence of Jamaican cuisine, offering an immersive digital experience that showcases menu items, restaurant ambiance, and provides seamless online reservation capabilities. The design reflects the warm, welcoming spirit of Caribbean culinary traditions.",
-    technologiesUsed: ["Nextjs", "Sass", "Nodemailer"],
+      "A comprehensive CMS powering the EMRC website in terms of content delivery, comes with built in media system, uploading of contents like insights, events, teams, products, and others",
+    technologiesUsed: ["React", "Remix", "TailwindCss", "ShadcnUi", "Sequelize", "Mysql"],
     designTheme: ["Light"],
-    href: "https://midwest-peach.vercel.app/",
+    href: "https://cms.energymrcng.ng/",
     reverse: false,
-    sourceCodeHref: "https://github.com/JohnnnGreat/Midwest",
+    sourceCodeHref: "/",
+  },
+  {
+    id: 20,
+    image: (
+      <Image className="rounded-[20px] h-[500px!important] object-cover" src={Elect} alt="Elect" />
+    ),
+    title: "Electricity Tracker",
+    description:
+      "A comprehensive Real-time Electricity monitoring, comparative analytics for efficient power usage.",
+    technologiesUsed: ["React", "Mui"],
+    designTheme: ["Light"],
+    href: "https://elec-t.energymrc.ng/register",
+    reverse: false,
+    sourceCodeHref: "/",
   },
 ];
 
@@ -113,11 +123,7 @@ export const latestProjects = [
     id: 18,
     no: "01",
     image: (
-      <Image
-        className="rounded-[20px] h-[500px!important] object-cover"
-        src={AICU}
-        alt="aicu"
-      />
+      <Image className="rounded-[20px] h-[500px!important] object-cover" src={AICU} alt="aicu" />
     ),
     title: "AICU | American International Christian University",
     description:
@@ -160,13 +166,7 @@ export const projectsInfoDetails = [
     title: "EMRC Website Repranding",
     description:
       "At EMRC we provide Techno-economic, Regulatory and Financial within all aspects of Energy and Utility Businesses",
-    technologiesUsed: [
-      "React",
-      "Next",
-      "TailwindCss",
-      "Shadcnui",
-      "Nextjs Server Actions",
-    ],
+    technologiesUsed: ["React", "Next", "TailwindCss", "Shadcnui", "Nextjs Server Actions"],
     designTheme: ["Light"],
     href: "https://www.energymrc.ng/",
     reverse: false,
@@ -202,14 +202,7 @@ export const projectsInfoDetails = [
     title: "EMRC CMS",
     description:
       "A comprehensive CMS powering the EMRC website in terms of content delivery, comes with built in media system, uploading of contents like insights, events, teams, products, and others",
-    technologiesUsed: [
-      "React",
-      "Remix",
-      "TailwindCss",
-      "ShadcnUi",
-      "Sequelize",
-      "Mysql",
-    ],
+    technologiesUsed: ["React", "Remix", "TailwindCss", "ShadcnUi", "Sequelize", "Mysql"],
     designTheme: ["Light"],
     href: "https://cms.energymrcng.ng/",
     reverse: false,
@@ -254,11 +247,7 @@ export const projectsInfoDetails = [
   {
     id: 20,
     image: (
-      <Image
-        className="rounded-[20px] h-[500px!important] object-cover"
-        src={Elect}
-        alt="Elect"
-      />
+      <Image className="rounded-[20px] h-[500px!important] object-cover" src={Elect} alt="Elect" />
     ),
     title: "Electricity Tracker",
     description:
@@ -269,7 +258,7 @@ export const projectsInfoDetails = [
     reverse: false,
     sourceCodeHref: "/",
   },
-  ,
+
   {
     id: 20,
     image: (
@@ -291,11 +280,7 @@ export const projectsInfoDetails = [
   {
     id: 22,
     image: (
-      <Image
-        className="rounded-[20px] h-[500px!important] object-cover"
-        src={INVG}
-        alt="INVOICE"
-      />
+      <Image className="rounded-[20px] h-[500px!important] object-cover" src={INVG} alt="INVOICE" />
     ),
     title: "InvoiceGen",
     description:
@@ -309,11 +294,7 @@ export const projectsInfoDetails = [
   {
     id: 21,
     image: (
-      <Image
-        className="rounded-[20px] h-[100px!important] object-cover"
-        src={FOF}
-        alt="fof"
-      />
+      <Image className="rounded-[20px] h-[100px!important] object-cover" src={FOF} alt="fof" />
     ),
     title: "Friends of Christ",
     description:
@@ -327,11 +308,7 @@ export const projectsInfoDetails = [
   {
     id: 18,
     image: (
-      <Image
-        className="rounded-[20px] h-[500px!important] object-cover"
-        src={AICU}
-        alt="aicu"
-      />
+      <Image className="rounded-[20px] h-[500px!important] object-cover" src={AICU} alt="aicu" />
     ),
     title: "AICU | American International Christian University",
     description:
@@ -381,11 +358,7 @@ export const projectsInfoDetails = [
   {
     id: 16,
     image: (
-      <Image
-        className="rounded-[20px] h-[500px!important] object-cover"
-        src={Temu}
-        alt="temu"
-      />
+      <Image className="rounded-[20px] h-[500px!important] object-cover" src={Temu} alt="temu" />
     ),
     title: "Temu Immigration",
     description:
@@ -399,11 +372,7 @@ export const projectsInfoDetails = [
   {
     id: 1,
     image: (
-      <Image
-        className="rounded-[20px] h-[500px!important] object-cover"
-        src={Jobr}
-        alt="midwest"
-      />
+      <Image className="rounded-[20px] h-[500px!important] object-cover" src={Jobr} alt="midwest" />
     ),
     title: "Jobr",
     description:
@@ -592,17 +561,12 @@ export const projectsInfoDetails = [
     reverse: false,
     technologiesUsed: ["Next", "Shadcnui", "Supabase"],
     designTheme: ["Light"],
-    sourceCodeHref:
-      "https://github.com/JohnnnGreat/Media-Storage-Supabase-Next.Js",
+    sourceCodeHref: "https://github.com/JohnnnGreat/Media-Storage-Supabase-Next.Js",
   },
   {
     id: 11,
     image: (
-      <Image
-        className="rounded-[20px] h-[500px!important] object-cover"
-        src={Ed}
-        alt="ed circle"
-      />
+      <Image className="rounded-[20px] h-[500px!important] object-cover" src={Ed} alt="ed circle" />
     ),
     title: "Ed Circle",
     description:

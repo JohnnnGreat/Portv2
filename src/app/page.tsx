@@ -1,5 +1,6 @@
 "use client";
 
+import { designProjects, designProjectsMain } from "@/designcnst";
 import { devSteps, homeProjects, latestProjects } from "@/constant";
 import { useEffect, useState } from "react";
 
@@ -41,9 +42,7 @@ export default function Home() {
             className="bg-black text-white py-8 px-8 rounded-3xl flex-1 hover:bg-gray-800 transition-all flex flex-col items-center justify-center"
           >
             <span className="text-4xl mb-4">💻</span>
-            <span className="font-Din text-xl uppercase tracking-wider">
-              Development
-            </span>
+            <span className="font-Din text-xl uppercase tracking-wider">Development</span>
             <p className="font-Circular text-sm mt-4 text-gray-300">
               View my web development projects and expertise
             </p>
@@ -54,9 +53,7 @@ export default function Home() {
             className="bg-white text-black py-8 px-8 rounded-3xl flex-1 border-2 border-black hover:bg-gray-100 transition-all flex flex-col items-center justify-center"
           >
             <span className="text-4xl mb-4">🎨</span>
-            <span className="font-Din text-xl uppercase tracking-wider">
-              Design
-            </span>
+            <span className="font-Din text-xl uppercase tracking-wider">Design</span>
             <p className="font-Circular text-sm mt-4 text-gray-600">
               Explore my UI/UX and graphic design work
             </p>
@@ -78,94 +75,22 @@ export default function Home() {
     if (portfolioType === "design") {
       return (
         <section className="py-[4rem] px-[1rem] bg-gray-50">
-          <div className="max-w-[1100px] mx-auto">
+          <div className="max-w-[1200px] mx-auto">
             <p className="text-[2.8rem] mb-[1rem] lg:text-[4.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] mt-4">
               Design Projects 🎨
             </p>
             <p className="font-thin font-Circular mx-auto mb-12">
-              A showcase of my creative design work—UI/UX designs, branding, and
-              visual experiences.
+              A showcase of my creative design work—UI/UX designs, branding, and visual experiences.
             </p>
 
             {/* Design portfolio content here */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[3rem] mt-[3rem]">
-              {/* Replace with your design projects */}
-              <div className="rounded-[40px] border p-[20px] md:p-[40px] bg-[#fafafa98] relative">
-                <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                  {/* Placeholder for design image */}
-                  <span className="text-4xl">🎨</span>
-                </div>
-                <div className="mt-[1rem]">
-                  <h1 className="font-Mark text-[1.3rem] md:text-[2rem] mt-[2rem] leading-relaxed line-clamp-1">
-                    Brand Identity Design
-                  </h1>
-                  <p className="font-Circular line-clamp-5 text-[#000]/50 mt-[1rem] text-justify leading-relaxed">
-                    A complete brand identity package including logo design,
-                    color palette, typography, and brand guidelines.
-                  </p>
-                  <button className="font-Din uppercase mt-[3rem] tracking-widest">
-                    View Project Details
-                    <div className="mt-[.4rem] w-[60px] h-[1px] bg-black"></div>
-                  </button>
-                  <ul className="mt-[1.3rem] font-Din flex gap-3 uppercase tracking-widest text-[#000]/50">
-                    <li>Branding</li>
-                    <li>Logo</li>
-                    <li>Typography</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="rounded-[40px] border p-[20px] md:p-[40px] bg-[#fafafa98] relative">
-                <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
-                  {/* Placeholder for design image */}
-                  <span className="text-4xl">📱</span>
-                </div>
-                <div className="mt-[1rem]">
-                  <h1 className="font-Mark text-[1.3rem] md:text-[2rem] mt-[2rem] leading-relaxed line-clamp-1">
-                    Mobile App UI Design
-                  </h1>
-                  <p className="font-Circular line-clamp-5 text-[#000]/50 mt-[1rem] text-justify leading-relaxed">
-                    A modern and intuitive user interface design for a finance
-                    management mobile application.
-                  </p>
-                  <button className="font-Din uppercase mt-[3rem] tracking-widest">
-                    View Project Details
-                    <div className="mt-[.4rem] w-[60px] h-[1px] bg-black"></div>
-                  </button>
-                  <ul className="mt-[1.3rem] font-Din flex gap-3 uppercase tracking-widest text-[#000]/50">
-                    <li>UI/UX</li>
-                    <li>Mobile</li>
-                    <li>Figma</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <a
-              href="/design-projects"
-              className="font-Din text-[1.2rem] mt-[4rem] inline-block tracking-widest uppercase"
-            >
-              See All Design Projects 🎨
-              <div className="mt-[.4rem] w-[60px] h-[1px] bg-black"></div>
-            </a>
-          </div>
-        </section>
-      );
-    } else if (portfolioType === "development") {
-      return (
-        <section id="projects" className="py-[4rem] px-[1rem]">
-          <div className="max-w-[1100px] mx-auto">
-            <p className="text-[2.8rem] mb-[1rem] lg:text-[4.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] mt-4">
-              Development Projects 💻
-            </p>
-            <p className="font-thin font-Circular mx-auto mb-12">
-              A peek into the cool stuff I've been building—websites, web apps,
-              and functional solutions.
-            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[3rem] mt-[3rem]">
-              {homeProjects.map((project) => (
-                <div className="rounded-[40px] border p-[20px] md:p-[40px] bg-[#fafafa98] relative">
+              {designProjects.map((project, idx) => (
+                <div
+                  key={idx}
+                  className="rounded-[40px] border p-[1rem] md:p-[40px] bg-[#fafafa98] relative"
+                >
                   <h1 className="text-[8rem] font-Mark text-[#5c5c5c0a] absolute top-[-5rem] left-[-3rem]">
                     {project.no}
                   </h1>
@@ -177,10 +102,66 @@ export default function Home() {
                     <p className="font-Circular line-clamp-5 text-[#000]/50 mt-[1rem] text-justify leading-relaxed">
                       {project.description}
                     </p>
-                    <button className="font-Din uppercase mt-[3rem] tracking-widest">
+                    <a
+                      href={project?.href}
+                      className="block font-Din uppercase mt-[3rem] tracking-widest"
+                    >
                       View Project Details
                       <div className="mt-[.4rem] w-[60px] h-[1px] bg-black"></div>
-                    </button>
+                    </a>
+                    <ul className="mt-[1.3rem] font-Din flex gap-3 uppercase tracking-widest text-[#000]/50">
+                      {project.technologiesUsed.map((tech, idx) => (
+                        <li key={idx}>{tech}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <Link
+              href="/design-projects"
+              className="font-Din text-[1.2rem] mt-[4rem] inline-block tracking-widest uppercase"
+            >
+              See All Design Projects 🎨
+              <div className="mt-[.4rem] w-[60px] h-[1px] bg-black"></div>
+            </Link>
+          </div>
+        </section>
+      );
+    } else if (portfolioType === "development") {
+      return (
+        <section id="projects" className="py-[4rem] px-[1rem]">
+          <div className="max-w-[1200px] mx-auto">
+            <p className="text-[2.8rem] mb-[1rem] lg:text-[4.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] mt-4">
+              Development Projects 💻
+            </p>
+            <p className="font-thin font-Circular mx-auto mb-12">
+              A peek into the cool stuff I've been building—websites, web apps, and functional
+              solutions.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[3rem] mt-[3rem]">
+              {homeProjects.map((project) => (
+                <div className="rounded-[10px] border p-[1rem] md:p-[1rem] bg-[#fafafa98] relative">
+                  <h1 className="text-[8rem] font-Mark text-[#5c5c5c0a] absolute top-[-5rem] left-[-3rem]">
+                    {project.no}
+                  </h1>
+                  <div>{project.image}</div>
+                  <div className="mt-[1rem]">
+                    <h1 className="font-Mark text-[1.3rem] md:text-[2rem] mt-[2rem] leading-relaxed line-clamp-1">
+                      {project.title}
+                    </h1>
+                    <p className="font-Circular line-clamp-5 text-[#000]/50 mt-[1rem] text-justify leading-relaxed">
+                      {project.description}
+                    </p>
+                    <Link
+                      href={project?.href}
+                      className="block font-Din uppercase mt-[3rem] tracking-widest"
+                    >
+                      View Project Details
+                      <div className="mt-[.4rem] w-[60px] h-[1px] bg-black"></div>
+                    </Link>
                     <ul className="mt-[1.3rem] font-Din flex gap-3 uppercase tracking-widest text-[#000]/50">
                       {project.technologiesUsed.map((tech) => (
                         <li>{tech}</li>
@@ -192,7 +173,7 @@ export default function Home() {
             </div>
 
             <a
-              href="/development-projects"
+              href="/projects"
               className="font-Din text-[1.2rem] mt-[4rem] inline-block tracking-widest uppercase"
             >
               See All Development Projects 💻
@@ -206,13 +187,12 @@ export default function Home() {
     // If no specific portfolio type or "view both" was selected
     return (
       <section id="projects" className="py-[4rem] px-[1rem]">
-        <div className="max-w-[1100px] mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <p className="text-[2.8rem] mb-[1rem] lg:text-[4.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] mt-4">
             Some Things I've Built 🛠️
           </p>
           <p className="font-thin font-Circular mx-auto mb-12">
-            A peek into the cool stuff I've been crafting—apps, websites, and
-            things that just work.
+            A peek into the cool stuff I've been crafting—apps, websites, and things that just work.
           </p>
 
           {/* Portfolio type selector tabs */}
@@ -220,9 +200,7 @@ export default function Home() {
             <button
               onClick={() => setPortfolioType("development")}
               className={`py-2 px-6 font-Din uppercase tracking-wider ${
-                portfolioType === "development" || !portfolioType
-                  ? "border-b-2 border-black"
-                  : ""
+                portfolioType === "development" || !portfolioType ? "border-b-2 border-black" : ""
               }`}
             >
               Development
@@ -239,7 +217,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[3rem] mt-[3rem]">
             {homeProjects.map((project) => (
-              <div className="rounded-[40px] border p-[20px] md:p-[40px] bg-[#fafafa98] relative">
+              <div className="rounded-[40px] border p-[1rem] md:p-[40px] bg-[#fafafa98] relative">
                 <h1 className="text-[8rem] font-Mark text-[#5c5c5c0a] absolute top-[-5rem] left-[-3rem]">
                   {project.no}
                 </h1>
@@ -312,10 +290,7 @@ export default function Home() {
         }`}
       />
       <meta property="og:url" content="https://johnossai.com.ng/" />
-      <meta
-        property="og:image"
-        content="https://www.johnossai.com.ng/image.png"
-      />
+      <meta property="og:image" content="https://www.johnossai.com.ng/image.png" />
       <meta
         property="og:description"
         content={`I am a ${
@@ -346,10 +321,7 @@ export default function Home() {
             : "designer & web developer"
         } passionate about turning ideas into real-life products.`}
       />
-      <meta
-        name="twitter:image"
-        content="https://www.johnossai.com.ng/image.png"
-      />
+      <meta name="twitter:image" content="https://www.johnossai.com.ng/image.png" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:url" content="https://johnossai.com.ng/" />
 
@@ -374,7 +346,7 @@ export default function Home() {
       </header>
 
       <section className="overflow-hidden min-h-screen relative bg-white flex items-center py-[5rem] pt-[5rem] md:py-[10rem] px-[1rem]">
-        <div className="max-w-[1000px] mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <img
             src="./hand.png"
             className="hidden md:block absolute w-[250px!important] bottom-[3rem] right-[-3rem] rotate-[-30deg] scale-x-[-1]"
@@ -399,7 +371,7 @@ export default function Home() {
               portfolioType === "design"
                 ? "/design-projects"
                 : portfolioType === "development"
-                ? "/development-projects"
+                ? "/projects"
                 : "/projects"
             }
             className="mt-[4rem] inline-block font-Din font-normal text-[1rem] uppercase tracking-[2px]"
@@ -414,13 +386,11 @@ export default function Home() {
       {renderPortfolioSpecificContent()}
 
       {/* Show tech stack only for development portfolio */}
-      {(portfolioType === "development" || !portfolioType) && (
-        <TechStackDisplay />
-      )}
+      {(portfolioType === "development" || !portfolioType) && <TechStackDisplay />}
 
       {/* Process section - customized based on portfolio type */}
       <section className="py-[5rem] px-[1rem]">
-        <div className="max-w-[1000px] mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <h1 className="text-[2.8rem] mb-[1rem] md:text-5xl lg:text-[4.5rem] font-bold leading-[1] font-Mark mt-[.5rem] text-right">
             🚀My{" "}
             {portfolioType === "design"
@@ -466,14 +436,12 @@ export default function Home() {
                     description:
                       "Iterating based on feedback and preparing final deliverables for implementation.",
                   },
-                ].map((step) => (
-                  <div className="bg-[#fafafa] p-[2rem] rounded-[20px] border">
+                ].map((step, idx) => (
+                  <div key={idx} className="bg-[#fafafa] p-[2rem] rounded-[20px] border">
                     <h1 className="font-Mark text-[1.5rem] my-[1rem] leading-[1.3]">
                       {step.title}
                     </h1>
-                    <p className="mt-[1.3rem] font-Circular text-[#000]/50">
-                      {step.description}
-                    </p>
+                    <p className="mt-[1.3rem] font-Circular text-[#000]/50">{step.description}</p>
                   </div>
                 ))
               : // Development process steps
@@ -482,9 +450,7 @@ export default function Home() {
                     <h1 className="font-Mark text-[1.5rem] my-[1rem] leading-[1.3]">
                       {step.title}
                     </h1>
-                    <p className="mt-[1.3rem] font-Circular text-[#000]/50">
-                      {step.description}
-                    </p>
+                    <p className="mt-[1.3rem] font-Circular text-[#000]/50">{step.description}</p>
                   </div>
                 ))}
           </div>
@@ -492,7 +458,7 @@ export default function Home() {
       </section>
 
       <section className="py-[3rem] px-[1rem]">
-        <div className="max-w-[1000px] mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <h2 className="text-[2.8rem] mb-[1rem] lg:text-[4.5rem] font-extrabold font-Mark leading-[1]">
             Think I could be the perfect{" "}
             {portfolioType === "design"
@@ -514,7 +480,7 @@ export default function Home() {
               portfolioType === "design"
                 ? "/design-projects"
                 : portfolioType === "development"
-                ? "/development-projects"
+                ? "/projects"
                 : "/projects"
             }
             className="font-Din text-[1.2rem] mt-[4rem] inline-block tracking-widest uppercase"
@@ -526,7 +492,7 @@ export default function Home() {
       </section>
 
       <section className="py-[5rem] px-[1rem]">
-        <div className="max-w-[1000px] mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <h2 className="text-[2.8rem] mb-[1rem] lg:text-[4.5rem] font-bold font-Mark mt-[4rem] leading-[1] md:max-w-[80%] text-[#000]/40">
             Ready to turn your ideas into a stunning reality?{" "}
             <span className="bg-text-gradient bg-clip-text text-transparent animate-gradient-rotate">
@@ -570,7 +536,7 @@ export default function Home() {
       </section>
 
       <footer className="border-t py-[3rem] px-[1rem]">
-        <div className="max-w-[1000px] mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <div className="flex items-center gap-[1rem]">
             <div className="font-Din leading-[1] border-r pr-[.7rem]">
               <h1>John</h1>

@@ -10,12 +10,14 @@ const Projects = () => {
       <title>My Projects</title>
       <div className="max-w-[1000px] mx-auto p-[1rem]">
         {" "}
-        <h1 className="text-[3rem]  md:text-5xl lg:text-[4.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[100%] md:max-w-[70%] lg:max-w-[80%] mt-[9rem]">
+        <Link className="inline-block mt-[3rem] border py-1 px-5 rounded-[4px]" href={"/"}>
+          Back
+        </Link>
+        <h1 className="text-[3rem]  md:text-5xl lg:text-[4.5rem] font-bold leading-[1] font-Mark max-w-full sm:max-w-[100%] md:max-w-[70%] lg:max-w-[80%] mt-[2rem]">
           Check out some of the cool stuff I’ve built
         </h1>
         <p className="font-thin font-Circular  mx-auto  mb-12 mt-[1rem]">
-          These projects showcase what I can do, and I’m always excited to
-          create more!
+          These projects showcase what I can do, and I’m always excited to create more!
         </p>
         <div className="flex flex-wrap gap-[3rem] mt-[3rem]">
           {projectsInfoDetails.map((project, idx) => (
@@ -41,8 +43,7 @@ const Projects = () => {
                   target="_blank"
                   className="font-Din uppercase mt-[3rem] inline-block tracking-widest"
                 >
-                  View Project Details{" "}
-                  <div className="mt-[.4rem] w-[60px] h-[1px] bg-black"></div>
+                  View Project Details <div className="mt-[.4rem] w-[60px] h-[1px] bg-black"></div>
                 </a>
 
                 <ul className="mt-[1.3rem] font-Din flex gap-3 uppercase tracking-widest text-[#000]/50">
